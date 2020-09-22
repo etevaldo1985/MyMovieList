@@ -1,0 +1,73 @@
+
+<div class="container my-5 p-5 z-depth-1">
+
+
+  <!--Section: Content-->
+  <section class="single-section">
+
+    <!-- Section heading -->
+    <h2 class="text-center font-weight-bold mb-4 pb-2 movieTitle">{{person.name }}</h2>
+
+    <hr/>
+    <!-- Section description -->
+
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-4 text-center text-lg-left">
+        <img class="img-fluid" [src]='poster + person.profile_path' alt="Person Photo">
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-8">
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+
+
+          <!-- Grid column -->
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3 overview">Biography</h5>
+            <p class="mx-auto mb-5">{{person.biography}}</p>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+
+        <div class="row mb-3">
+
+
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3 topic">Birthday: {{person.birthday | date}}</h5>
+            <h5 class="font-weight-bold mb-3 topic">Place of Bith: {{person.place_of_birth}}</h5>
+            <h5 *ngIf='person.gender===2' class="font-weight-bold mb-3 topic">Gender: Male</h5>
+            <h5 *ngIf='person.gender===1' class="font-weight-bold mb-3 topic">Gender: Female</h5>
+
+
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+
+
+
+

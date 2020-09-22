@@ -1,0 +1,42 @@
+<!-- Card -->
+<div [ngSwitch]='credits.profile_path === null' class="card" *ngFor='let credits of people.cast'>
+
+  <!-- Card image -->
+  <a [routerLink]="['/movie/single-people', credits.id]"><img *ngSwitchCase= 'false' [src]='poster + credits.profile_path' class="card-img-top" id="person" alt="Movie Poster"></a>
+
+  <!-- Card content -->
+  <div class="card-body" *ngSwitchCase= 'false'>
+
+    <!-- Title -->
+    <h4 *ngSwitchCase= 'false' class="card-title card-movie-title"><a>{{ credits.name }}</a></h4>
+
+
+    <hr *ngSwitchCase= 'false'>
+
+    <pre *ngSwitchCase= 'false' class="info">Character: <b>{{credits.character}}</b></pre>
+
+
+
+  </div>
+
+  <a [routerLink]="['/movie/single-movie', credits.id]"><img *ngSwitchCase= 'true' src="/assets/avatar.png" class="card-img-top" id="person" alt="Movie Poster"></a>
+
+  <!-- Card content -->
+  <div class="card-body" *ngSwitchCase= 'true'>
+
+    <!-- Title -->
+    <h4 *ngSwitchCase= 'true' class="card-title card-movie-title"><a>{{ credits.name }}</a></h4>
+
+
+    <hr *ngSwitchCase= 'true'>
+
+    <pre *ngSwitchCase= 'true' class="info">Character: <b>{{credits.character}}</b></pre>
+
+
+
+  </div>
+
+
+
+</div>
+<!-- Card -->

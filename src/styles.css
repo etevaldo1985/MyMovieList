@@ -1,1 +1,183 @@
-/* You can add global styles to this file, and also import other style files */
+
+/*Home Style*/
+.nav-link{
+  color: whitesmoke;
+}
+.navbar-brand {
+  color: whitesmoke;
+}
+.nav-item, .dropdown {
+  color: whitesmoke;
+}
+
+.jumbotron {
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -0.25rem 0rem;
+
+}
+
+.trending {
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 2px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.playing {
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 2px;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.form-control-sm {
+  color: whitesmoke !important;
+}
+.title {
+  color: whitesmoke;
+  font-weight: 400;
+
+}
+ ::placeholder {
+  color: whitesmoke !important;
+  }
+
+/*Menu Style*/
+
+.menu {
+  background-color: black;
+}
+
+/*Footer Style*/
+.page-footer {
+  background-color: black;
+}
+
+/*MovieCard Style*/
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 180px;
+  margin: 4rem 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+#cardMovie {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 198px;
+  margin: 4rem 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card-img-top {
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#poster {
+  width: 198px;
+}
+.card-movie-title {
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 0.5px;
+  color: black;
+  align-items: center !important;
+  font-size: 13pt;
+  height: 60px;
+
+}
+.trailer {
+  font-size: 9pt;
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 0.5px;
+  height: 30px;
+  align-items: center !important;
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  margin: 0rem 2rem !important;
+
+
+}
+.card-body {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 198px !important;
+}
+
+.movie-overview {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+  height: 150px;
+  overflow: auto;
+
+}
+
+
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #d3d3d3;
+}
+.full {
+  color: red;
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: red;
+}
+.info {
+  font-size: 9pt;
+  font-family: 'Do Hyeon', sans-serif !important;
+  letter-spacing: 0.5px;
+}
+
+/*PeopleCard Style*/
+
+.img-fluid {
+  max-width: 350px !important;
+}
+
+/*Single Movie Style*/
+
+.overview {
+  font-size: 15pt;
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 0.5px;
+}
+.topic {
+  font-size: 11pt;
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 0.5px;
+}
+.movieTitle {
+  font-size: 30pt;
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 0.5px;
+}
+.review {
+  background-color: white;
+  margin: 2rem 0rem !important;
+}
+.display-4 {
+  font-size: 15pt;
+  font-family: 'Do Hyeon', sans-serif;
+  letter-spacing: 0.5px;
+}
+.review {
+  max-height: 300px;
+  max-width: 700px;
+}
+.lead {
+  font-size: 12pt;
+  font-family: sans-serif;
+
+}

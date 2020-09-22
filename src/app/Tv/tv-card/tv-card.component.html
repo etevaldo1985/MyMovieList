@@ -1,0 +1,53 @@
+<!-- Card -->
+<div class="card" id="cardMovie" *ngFor='let tv of rated.results'>
+
+  <!-- Card image -->
+  <a [routerLink]="['/movie/single-movie', tv.id]"><img class="card-img-top" id="poster" [src]='poster + tv.poster_path' alt="Movie Poster"></a>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h4 class="card-title card-movie-title"><a>{{tv.name}}</a></h4>
+    <hr>
+    <ng-template #t let-fill="fill">
+      <span class="star" [class.full]="fill === 100">
+        <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+      </span>
+
+    </ng-template>
+
+    <ngb-rating [(rate)]="tv.vote_average" [starTemplate]="t" [readonly]="true" [max]="10"></ngb-rating>
+
+    <hr>
+    <pre class="info">Rate: <b>{{tv.vote_average}}</b></pre>
+    <pre class="info">Realease date: <b>{{tv.first_air_date | date}}</b></pre>
+    <pre class="info">Overview:</pre>
+
+    <!-- Text -->
+    <p class="card-text movie-overview">{{tv.overview}}</p>
+    <!-- Button -->
+    <button class="btn btn-outline-dark waves-effect trailer" (click)='getKey(tv.id)'
+        (click)="open(content)">Trailer<span class="fas fa-video ml-1"></span></button>
+
+  </div>
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Trailer</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body" *ngFor='let trailer of results'>
+
+      <youtube-player [videoId]='trailer.key'></youtube-player>
+
+    </div>
+    <div class="modal-footer">
+
+    </div>
+  </ng-template>
+
+
+</div>
+<!-- Card -->

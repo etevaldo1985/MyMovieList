@@ -1,0 +1,91 @@
+
+<div class="container my-5 p-5 z-depth-1">
+
+
+  <!--Section: Content-->
+  <section class="single-section">
+
+    <!-- Section heading -->
+    <h2 class="text-center font-weight-bold mb-4 pb-2 movieTitle">{{movie.title }}</h2>
+    <p class="text-center font-weight-bold mb-4 pb-2" >{{ movie.release_date | date }} ,  <span *ngFor='let movie of movie.genres'> {{ movie.name }}, </span>{{ movie.runtime }}min.</p>
+    <hr/>
+    <!-- Section description -->
+
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-4 text-center text-lg-left">
+        <img class="img-fluid" [src]='poster + movie.poster_path' alt="Movie Poster">
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-8">
+
+        <!-- Grid row -->
+        <div class="row mb-3">
+
+
+
+          <!-- Grid column -->
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3 overview">Overview</h5>
+            <p class="mx-auto mb-5">{{movie.overview}}</p>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+
+        <div class="row mb-3">
+
+
+          <div class="col-xl-10 col-md-11 col-10">
+            <h5 class="font-weight-bold mb-3 topic">Original Language: {{movie.original_language}}</h5>
+            <h5 class="font-weight-bold mb-3 topic">Budget: {{movie.budget}}</h5>
+            <h5 class="font-weight-bold mb-3 topic">Status: {{movie.status}}</h5>
+            <ng-template #t let-fill="fill">
+              <span class="star" [class.full]="fill === 100">
+                <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+              </span>
+
+            </ng-template>
+            <h5 class="font-weight-bold mb-3 topic">Rating:</h5>
+            <ngb-rating [(rate)]="movie.vote_average" [starTemplate]="t" [readonly]="true" [max]="10"></ngb-rating>
+            <h5 class="font-weight-bold mb-3 topic">{{movie.vote_average}} of 10.</h5>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!--Section: Content-->
+
+
+</div>
+<h2 class="trending">MAIN CAST</h2>
+<hr>
+<div class="row" style="overflow: auto;">
+
+<app-people-card  [people]="credit" class="col-lg-24 d-flex "></app-people-card>
+</div>
+<h2 class="trending">REVIEWS</h2>
+<hr>
+<div class="jumbotron review" style="overflow: scroll;">
+  <div class="container" *ngFor='let review of reviews.results' >
+    <hr/>
+    <h2 class="display-4">Author: {{review.author}}</h2>
+    <p class="lead">{{ review.content }}</p>
+  </div>
+</div>
+

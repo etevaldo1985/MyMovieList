@@ -1,0 +1,50 @@
+<div class="container-fluid main-container" id="home">
+  <div class="row align-items-start">
+
+    <div class="col-12">
+
+      <div class="jumbotron" style="background-image: url('/assets/cinema.jpg');">
+
+        <div class="container-fluid">
+          <h1 class="display-4 title">MY MOVIE LIST</h1>
+          <p class="lead title">Search movies, check infos, rate them and add make your own list!</p>
+          <br />
+          <form class="form-inline d-flex justify-content-left md-form form-sm">
+            <input class="form-control form-control-sm mr-3 w-25" type="text" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search text-white" aria-hidden="true"></i>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <div>
+    <h2 class="trending">TRENDING</h2>
+    <hr>
+  </div>
+
+  <div class="row" style="overflow: auto;">
+
+    <app-movie-card [trending]="trending" class="col-lg-24 d-flex movieCard"></app-movie-card>
+  </div>
+  <div>
+    <h2 class="playing">NOW PLAYING</h2>
+    <hr>
+  </div>
+  <div class="row" style="overflow: auto;">
+    <app-movie-card-latest [playing]="playing" class="col-lg-24 d-flex"></app-movie-card-latest>
+
+  </div>
+  <div>
+    <h2 class="playing">TV TOP RATED</h2>
+    <hr>
+  </div>
+  <div class="row" style="overflow: auto;">
+    <app-tv-card [rated]="rated" class="col-lg-24 d-flex"></app-tv-card>
+
+  </div>
+</div>
