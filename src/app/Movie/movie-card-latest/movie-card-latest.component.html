@@ -1,5 +1,5 @@
 <!-- Card -->
-<div class="card" *ngFor='let movie of playing.results'>
+<div class="card" id="cardPlaying" *ngFor='let movie of playing.results'>
 
   <!-- Card image -->
   <a [routerLink]="['/movie/single-movie', movie.id]" ><img class="card-img-top" id="poster" [src]='poster + movie.poster_path' alt="Movie Poster"></a>

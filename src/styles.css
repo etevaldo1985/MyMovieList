@@ -74,6 +74,24 @@
   border-radius: 10px;
   display: inline-block;
 }
+#cardPlaying {
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 198px;
+  margin: 4rem 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+#cardTv{
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 198px;
+  margin: 4rem 2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
 
 .card-img-top {
 
