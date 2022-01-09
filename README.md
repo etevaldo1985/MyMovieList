@@ -1,3 +1,13 @@
+<img width="1423" alt="Screen Shot 2022-01-09 at 11 10 27 AM" src="https://user-images.githubusercontent.com/66924405/148697048-2c5d8743-cf97-4e50-8541-4413ff782077.png">
+
+<img width="1423" alt="Screen Shot 2022-01-09 at 11 10 49 AM" src="https://user-images.githubusercontent.com/66924405/148697049-f87569b4-a83f-46f5-98fd-f9934f64ab8e.png">
+
+<img width="1423" alt="Screen Shot 2022-01-09 at 11 11 07 AM" src="https://user-images.githubusercontent.com/66924405/148697055-b0fab97e-575b-44c8-bb75-63ff9b9554df.png">
+
+<img width="1423" alt="Screen Shot 2022-01-09 at 11 11 40 AM" src="https://user-images.githubusercontent.com/66924405/148697059-91e61028-732e-4184-bfcf-432d6a2ec00c.png">
+
+
+
 # MyMovieList
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
